@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 /**
  * @module M/control/MvtstylesControl
  */
@@ -139,7 +137,6 @@ export default class MvtstylesControl extends M.Control {
   addMVT(url, sourceTitle, sourceName) {
     M.remote.get(url).then((res) => {
       let tiles = JSON.parse(res.text)
-      console.log(tiles)
       let mvt = new M.layer.MVT({
         url: tiles.tiles[0],
         name: sourceTitle,
@@ -147,7 +144,6 @@ export default class MvtstylesControl extends M.Control {
       });
 
       mvt.on(M.evt.LOAD, () => {
-        console.log('cargo el mvt')
         let olmvt = mvt.getImpl().getOLLayer();
         applyStyle(olmvt, this.style_, sourceName)
       })
@@ -156,6 +152,6 @@ export default class MvtstylesControl extends M.Control {
   }
 
   addTMS(tiles) {
-    console.log(tiles)
+    // console.log(tiles)
   }
 }

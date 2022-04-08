@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 /**
  * @module M/plugin/Mvtstyles
  */
@@ -73,7 +71,6 @@ export default class Mvtstyles extends M.Plugin {
     // this.panel_.addControls(this.controls_);
     // this.panel_.on(M.evt.ADDED_TO_MAP, () => {
     //   this.fire(M.evt.ADDED_TO_MAP);
-    //   console.log("cargo panel")
     // });
     // map.addPanels(this.panel_);
     map.addControls(this.controls_)
