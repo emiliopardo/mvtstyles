@@ -112,7 +112,7 @@ export default class MvtstylesControl extends M.Control {
         for (let index = 0; index < layers.length; index++) {
           const layer = layers[index];
           if (layer.id == 'background') {
-            let mapcontainer = document.getElementsByClassName('container m-mapea-container')
+            let mapcontainer = document.getElementsByClassName('m-mapea-container')
             mapcontainer[0].style.backgroundColor = Object.values(layer.paint)[0]
             find = true
           }
