@@ -22,12 +22,12 @@ const map = M.map({
 
 // const config = 'http://localhost/tileserver/styles/mapa_andalucia_sepia_scale/style.json'
 // const config = 'http://localhost/tileserver/styles/mapa_andalucia/style.json'
-const config = 'http://localhost/tileserver/styles/osm-liberty/style.json'
+// const config = 'http://localhost/tileserver/styles/osm-liberty/style.json'
 // const config = 'http://localhost/tileserver/styles/style-basic/style.json'
 // const config = 'http://localhost/tileserver/styles/mapa_andalucia_gray_scale_fondo_negro/style.json'
 // const config = 'http://localhost/tileserver/styles/style-dark-matter/style.json'
+const config = 'https://api.maptiler.com/maps/openstreetmap/style.json?key=NxfrAN8VvDV2T3sw3L6z'
 
-// map.setZoom(6)
 const mp = new Mvtstyles(config);
 
 map.addPlugin(mp);
